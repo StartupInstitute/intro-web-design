@@ -245,6 +245,10 @@
     font-weight: 900;
     color: #2a6c8f;
     font-style: normal; }
+  .deck-container .notes {
+    font-style: italic;
+    font-size: .7em;
+    line-height: .7em; }
   .deck-container h1 {
     font-family: 'Lato',"HelveticaNeue", "Helvetica", "Arial", sans-serif;
     font-weight: 900;
