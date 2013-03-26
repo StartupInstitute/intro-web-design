@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Type &amp; Image</title>
+	<meta name="viewport" content="width=1024">
+	
+	<!-- Replace path with correct path to deck.core.css. -->
+	<link rel="stylesheet" href="src/deck.js/core/deck.core.css" type="text/css">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="src/deck.js/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="src/css/prettify.css">
+	<link rel="stylesheet" href="src/css/deck.coder.css">
+	
+
+	<!-- Theme -->
+	<link rel="stylesheet" id='style-theme-link' href="src/css/coderdeck.css" type="text/css" >
+
+	<link rel="stylesheet" href="src/codemirror/lib/codemirror.css">
+	<link rel="stylesheet" href="src/codemirror/theme/default.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Replace path with correct path to Modernizr file. -->
+
+	<script src='src/jquery.min.js'></script>
+	<script src="src/modernizr.js"></script>
+</head>
+<body class="deck-container">
+	<script type='text/coderdeck' id='coderdeck-default'>
+	  <html>
+	    <head>
+	      <script src='src/jquery.min.js'>SCRIPTEND
+	    </head>
+	    <body>
+		    CODE
+	    </body>
+	</html>
+	</script>
+
+	<script type='text/coderdeck' id='coderdeck-plain'>
+		<html>
+			<title>test</title>
+			<link rel="stylesheet" href="reset.css">
+			<body>
+				CODE
+			</body>
+		</html>
+	</script>
+
+	<script type='text/coderdeck' id='coderdeck-css-playground'>
+		<html>
+			<title>test</title>
+				CODE
+			<body>
+				<h1>I'm a H1 heading</h1>
+				<h2>I'm a H2 heading</h2>
+				<p>Pargraph of text &lt;p&gt;</p>
+				<div class='stuff'>&lt;div&gt; with class "stuff"</div>
+				<div id='my-div'>&lt;div&gt; with id "my-div"</div>
+			</body>
+		</html>
+	</script>
+
+
+	<script type='text/coderdeck' id='coderdeck-style-example'>
+		<html>
+			<title>test</title>
+			<style>
+				CODE
+			</style>
+			<body>
+				<h1>I'm a H1 heading</h1>
+				<h2>I'm a H2 heading</h2>
+				<h3>Pargraph of text &lt;p&gt; here</p>
+				<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+				<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+			</body>
+		</html>
+	</script> 	
+
+
+<!-- Create any number of elements with class slide within the container -->
+<article class='slide slide-subhead'>
+<h1>StartUp Institute</h1>
+<h2>Type &amp; Image</h2>
+</article>
+
+
+</article>
+<article class='slide slide-accent'>
+	<h1>Let's Talk Type</h1>
+</article>
+
+
+<article class='slide slide-accent'>
+	<h1>History of Type on the Web</h1>
+</article>
+
+<article class="slide slide-list">
+<h1>In the past you were limited too...</h1>
+		<h3 class="slide">Web-safe fonts (working with the same 5 fonts)</h3>
+		<ul>
+			<li class="slide">
+				<h3>Arial</h3>
+			</li>
+			<li class="slide">
+				<h3>Georgia</h3>
+			</li>
+			<li class="slide">
+				<h3>Verdana</h3>
+			</li>
+			<li class="slide">
+				<h3>Times</h3>
+			</li>
+			<li class="slide">
+				<h3>Trebuchet</h3>
+			</li>
+		</ul>				
+</article>
+
+<article class="slide slide-subhead">
+	<h1>Today we have</h1>
+	<h2>CSS3 &amp; @font-face</h2>
+	<pre>	@font-face {
+	  src: url(Beautiful-ES.ttf);
+	  font-family: "Beautiful";
+	}</pre>
+</article>
+
+
+<article class='slide slide-list'>
+	<h1>Pros</h1>
+		<ul>
+		<li class="slide">
+			<h3>We have more fonts to use!.</h3>
+		</li>
+		<li class="slide">
+			<h3>Dynamic, selectable, printable, and easily edited text</h3>
+		</li>
+		<li class="slide">
+			<h3>Easy to implement</h3>
+		</li>
+		<li class="slide">
+			<h3>Smaller and faster loading pages than images</h3>
+		</li>
+		</ul>
+</article>
+
+
+<article class='slide slide-list'>
+	<h1>Cons</h1>
+	<ul>
+		<li class="slide">
+			<h3>Easy to overuse. Lots of funs fonts don’t make good designs, good designers make good designs</h3>
+		</li>
+		<li class="slide">
+			<h3>Licensing - if it’s not open sourced and you don’t have a license - don’t use it</h3>
+		</li>
+		<li class="slide">
+			<h3>FOUT (flash of unstyled text)</h3>
+		</li>
+		<li class="slide">
+			<h3>Rendering differences  (pixel perfection should be a thing of the past)</h3>
+		</li>
+		</ul>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>Getting your fonts into your site</h1>
+</article>	
+
+<article class='slide slide-subhead'>
+	<h2><br/>Full Browser Support<br/><br/></h2>
+	<img src='images/browsers.png'/>
+</article>
+
+<article class='slide slide-list'>
+	<h1>@font-face</h1>
+		<ul>
+		<li class="slide">
+			<h3>Adds “font-family” fonts you can use with CSS</h3>
+		</li>
+		<li class="slide">
+			<h3>Currently you need to provide 4 different versions of the same font to cover all browsers</h3>
+		</li>
+		<li class="slide">
+			<h3>Don’t worry about the specifics use a generator like <a href="http://www.fontsquirrel.com/">fontsquirrel.com</a>  or use a <a href="https://typekit.com/fonts">hosting service</a></h3>
+		</li>
+		</ul>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>2 Ways to Get Fonts Into Your Site</h1>
+</article>
+
+<article class='slide slide-subhead'>
+	<h1>A Hosted Platform</h1>
+	<h3>Like <a href="http://www.google.com/fonts/">Google Web Fonts</a> or	
+	 <a href="https://typekit.com/fonts">TypeKit</a></h3>
+</article>
+
+<article class='slide slide-subhead'>
+	<h1>Host them Yourself</h1>
+	<h3>Can download/buy from <a href="http://www.fontsquirrel.com/">Font Squirrel</a> or	
+	<a href="http://www.myfonts.com/search/is_webfont:true/webfonts/?view=list">MyFonts</a></h3>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>Hosted Platforms</h1>
+</article>
+
+<article class='slide slide-list'>
+	<h2>Will give you code to put in your header</h2>
+		<pre>&lt;link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'&gt;</pre>
+	<p><em>Example from Google Fonts</em></p>
+</article>
+
+<article class='slide slide-list'>
+	<h2>and code to put in your css</h2>
+		<pre>h1 { font-family: 'Lobster', cursive; }</pre>
+	<p><em>Example from Google Fonts</em></p>
+</article>
+
+<article class='slide slide-list'>
+	<h1>Why Hosted Platforms?</h1>
+	<ul>
+		<li><h3>You don't need to buy/download individual fonts</h3></li>
+		<li><h3>They store all 4 versions of the font for you</h3></li>
+		<li><h3>Options to More Fonts</h3></li>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>Host Fonts Yourself</h1>
+</article>
+
+
+<article class='slide slide-subhead'>
+	<h1>You get 4 font versions</h1>
+	<h3>you need to download then host and link to them ALL in your CSS</h3>
+</article>
+
+
+<article class='slide slide-list'>
+	<h2>The Raw Code For Your CSS Looks Like This</h2>
+  <pre>@font-face {
+  font-family: 'Lobster';
+  src: url('type/Lobster.eot');
+  src: url('type/Lobster.eot?#iefix') format('embedded-opentype'),
+    url('type/Lobster.woff') format('woff'),
+    url('type/Lobster.ttf') format('truetype'),
+    url('type/Lobster.svg#Lobster13Regular') format('svg');
+}
+</pre>
+	<p><em>Don’t write this - cut and paste from your generator into your CSS</em></p>
+</article>
+
+<article class='slide slide-list'>
+	<h2>and code to put in your styles</h2>
+		<pre>h1 { font-family: 'Lobster', cursive; }</pre>
+	<p><em>Example from Google Fonts</em></p>
+</article>
+
+<article class='slide slide-list'>
+	<h1>Why Hosted Your Fonts?</h1>
+	<ul>
+		<li><h3>You don't need to subscribe to a service (typkit)</h3></li>
+		<li><h3>You don't need to rely on another system to serve up your fonts</h3></li>
+</article>
+
+<article class='slide slide-list'>
+<h2>Exercise 1: Load Some Google Fonts</h2>
+<p>Load a different font for your H1 from <a href='http://www.google.com/webfonts'>Google Fonts</a></p>
+<textarea class='coder-editor coder-editor-full' data-coder-template="coderdeck-plain" data-language='html'>
+<style>
+
+
+</style>
+
+<html>
+<head>
+
+</head>
+<body>
+<section id='content'>
+  <article class='blog-post'>
+    <h1>Blog Post 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+  </article>
+  <article class='blog-post'>
+    <h1>Blog Post 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+  </article>
+</section>
+</body>
+</html>
+</textarea>
+<script type='coder-solution'>
+<style>
+
+h1 {font-family: 'Lobster', cursive;}
+
+</style>
+
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<section id='content'>
+  <article class='blog-post'>
+    <h1>Blog Post 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+  </article>
+  <article class='blog-post'>
+    <h1>Blog Post 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+  </article>
+</section>
+</body>
+</html>
+</script>
+
+</article>
+
+
+<article class='slide slide-accent'>
+	<h1>Where do you find fonts?</h1>
+</article>
+
+<article class='slide slide-list'>
+	<h2><br/><br/>Subscription Hosted Platforms</h2>
+	<h3><a href="http://typekit.com/">Typekit</a></h3>
+	<h3><a href="http://fontdeck.com/">FontDeck</a></h3>
+	<h3><a href="http://www.fonts.com/">Fonts.com</a></h3>
+</article>
+
+
+
+<article class='slide slide-list'>
+	<h2><br/><br/>Buying a License</h2>
+	<h3><a href="http://new.myfonts.com/">MyFonts</a></h3>
+	<h3><a href="http://kernest.com/">Kernest</a></h3>
+	<h3><a href="http://www.fontspring.com/">FontSpring</a></h3>
+	<h3><a href="http://www.webtype.com/">Webtype</a></h3>
+</article>
+
+
+<article class='slide slide-list'>
+	<h2><br/><br/>Free Fonts</h2>
+	<h3><a href="http://www.google.com/webfonts#ChoosePlace:select">Google Web Fonts</a></h3>
+	<h3><a href="http://www.fontsquirrel.com/">Font Squirrel</a></h3>
+	<h3><a href="http://www.theleagueofmoveabletype.com/">The League of Moveable Type</a></h3>
+</article>
+
+<article class='slide slide-list'>
+	<h1>Free Problems</h1>
+		<ul>
+		<li class="slide">
+			<h3>Quality not guaranteed</h3>
+		</li>
+		<li class="slide">
+			<h3>Unknown rendering (hinting)</h3>
+		</li>
+		<li class="slide">
+			<h3>Poorly drawn</h3>
+		</li>
+		<li class="slide">
+			<h3>Poorly kerned</h3>
+		</li>
+	</ul>	
+</article>
+
+<article class='slide slide-subhead'>
+	<h2><br/>Complete Sets<br/></h2>
+	<img src='images/free-font.png'/>
+</article>
+
+<article class='slide slide-subhead'>
+	<h2><br/>Font Hinting<br/></h2>
+	<img src='images/hinting.png'/>
+	<a href="http://en.wikipedia.org/wiki/Font_hinting">via Wikipedia</a>
+</article>
+
+<article class='slide slide-subhead'>
+	<h2><br/>Kerning<br/></h2>
+	<img src='images/kerning.png'/>
+</article>
+
+
+<article class='slide slide-list'>
+	<h1>Licensing</h1>
+	<ul>
+		<li class="slide">
+			<h3>Make sure you own the license</h3>
+		</li>
+		<li class="slide">
+			<h3>Read the EULA</h3>
+		</li>
+		<li class="slide">
+			<h3>Desktop licenses are not the same as web</h3>
+		</li>
+		<li class="slide">
+			<h3>Avoid liability issues</h3>
+		</li>
+		</ul>
+</article>
+
+
+
+<article class='slide slide-accent'>
+	<h1>Images on the Web</h1>
+</article>
+
+<article class='slide slide-list'>
+<h2>Know the Basics</h2>
+	<ul>
+		<li class="slide">
+			<h3>8bit vs 24bit</h3>
+		</li>
+		<li class="slide">
+			<h3>Compresed vs Uncompressed</h3>
+		</li>
+		<li class="slide">
+			<h3>Lossy vs Non-lossy</h3>
+		</li>
+		<li class="slide">
+			<h3>Transparency</h3>
+		</li>
+	</ul>
+</article>
+
+<article class='slide slide-list'>
+<h2>Know your Formats</h2>
+	<ul>
+		<li class="slide">
+			<h3>GIF</h3>
+		</li>
+		<li class="slide">
+			<h3>JPG</h3>
+		</li>
+		<li class="slide">
+			<h3>PNG</h3>
+		</li>
+		<li class="slide">
+			<h3>SVG</h3>
+		</li>
+   		<li class="slide">
+   			<h3>ICO </h3>
+   		</li>
+	</ul>
+</article>
+
+<article class="slide slide-statement">
+	<h1><s>.tiff</s></h1>
+</article>
+
+<article class="slide slide-statement">
+	<h1><s>.psd</s></h1>
+</article>
+
+<article class="slide slide-statement">
+	<h1><s>.eps</s></h1>
+</article>
+
+<article class='slide slide-list'>
+<h2>gif</h2>
+	<ul>
+		<li class="slide">
+			<h3>non-lossy</h3>
+		</li>
+		<li class="slide">
+			<h3>8bit</h3>
+		</li>
+		<li class="slide">
+			<h3>1bit transparency</h3>
+		</li>
+		<li class="slide">
+			<h3>small</h3>
+		</li>
+   		<li class="slide">
+   			<h3>RLE </h3>
+   		</li>
+		<li class="slide">
+   			<h3>Can be <a href="http://dailydoseofcute.net/wp-content/uploads/bulldog-in-a-swing.gif">animated</a></h3>
+   		</li>
+	</ul>
+</article>
+
+<article class='slide slide-list'>
+<h2>jpg</h2>
+	<ul>
+		<li class="slide">
+			<h3>lossy</h3>
+		</li>
+		<li class="slide">
+			<h3>FFT-compression</h3>
+		</li>
+		<li class="slide">
+			<h3>24 bit</h3>
+		</li>
+	</ul>
+</article>
+
+<article class='slide slide-list'>
+<h2>png</h2>
+	<ul>
+		<li class="slide">
+			<h3>upgrading gif</h3>
+		</li>
+		<li class="slide">
+			<h3>24 & 8bit</h3>
+		</li>
+		<li class="slide">
+			<h3>24 bit supports "soft" transparency</h3>
+		</li>
+	</ul>
+</article>
+
+<article class='slide slide-list'>
+<h2>svg</h2>
+	<ul>
+		<li class="slide">
+			<h3>scalable vector graphics</h3>
+		</li>
+		<li class="slide">
+			<h3>good support only recently</h3>
+	</ul>
+</article>
+
+<article class='slide slide-list'>
+<h2>ico</h2>
+	<ul>
+		<li class="slide">
+			<h3>favicon (the only time you would use it)</h3>
+		</li>
+	</ul>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>You are getting good at this!<br/>On to Your Lab!</h1>
+</article>
+
+
+
+<!-- Update these paths to point to the correct files. -->
+<script src="src/jquery.tmpl.min.js"></script>
+<script src="src/deck.js/core/deck.core.js"></script>
+
+<!-- Code Mirror -->
+<script src="src/codemirror/lib/codemirror.js"></script>
+<script src="src/codemirror/mode/xml/xml.js"></script>
+<script src="src/codemirror/mode/css/css.js"></script>
+<script src="src/codemirror/mode/javascript/javascript.js"></script>
+<script src="src/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+<!-- Prettify -->
+<script src="src/prettify.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="src/deck.js/extensions/status/deck.status.js"></script>
+<script src="src/deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src='src/deck.coder.js'></script>
+<script src="src/deck.js/extensions/hash/deck.hash.js"></script>
+<script src="src/deck.js/extensions/menu/deck.menu.js"></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>

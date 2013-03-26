@@ -145,7 +145,7 @@ $callout-color:rgb(42, 108, 143);
 	.large { color:red;}
 	.callout { @include sans-font; color:$head-color; }
 	em { @include sans-font; color:$callout-color; font-style:normal;}
-	
+	.notes { font-style:italic; font-size:.7em; line-height:.7em; }
 	
 	h1 {
 		@include sans-font;

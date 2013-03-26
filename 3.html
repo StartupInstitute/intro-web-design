@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>We &hearts; CSS</title>
+	<meta name="viewport" content="width=1024">
+	
+	<!-- Replace path with correct path to deck.core.css. -->
+	<link rel="stylesheet" href="src/deck.js/core/deck.core.css" type="text/css">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="src/deck.js/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="src/css/prettify.css">
+	<link rel="stylesheet" href="src/css/deck.coder.css">
+	
+
+	<!-- Theme -->
+	<link rel="stylesheet" id='style-theme-link' href="src/css/coderdeck.css" type="text/css" >
+
+	<link rel="stylesheet" href="src/codemirror/lib/codemirror.css">
+	<link rel="stylesheet" href="src/codemirror/theme/default.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Replace path with correct path to Modernizr file. -->
+
+	<script src='src/jquery.min.js'></script>
+	<script src="src/modernizr.js"></script>
+</head>
+<body class="deck-container">
+
+<script type='text/coderdeck' id='coderdeck-default'>
+  <html>
+    <head>
+      <script src='src/jquery.min.js'>SCRIPTEND
+    </head>
+    <body>
+	    CODE
+    </body>
+</html>
+</script>
+
+<script type='text/coderdeck' id='coderdeck-plain'>
+	<html>
+		<title>test</title>
+		<link rel="stylesheet" href="reset.css">
+		<body>
+			CODE
+		</body>
+	</html>
+</script>
+
+<script type='text/coderdeck' id='coderdeck-css-playground'>
+	<html>
+		<title>test</title>
+			CODE
+		<body>
+			<h1>I'm a H1 heading</h1>
+			<h2>I'm a H2 heading</h2>
+			<p>Pargraph of text &lt;p&gt;</p>
+			<div class='stuff'>&lt;div&gt; with class "stuff"</div>
+			<div id='my-div'>&lt;div&gt; with id "my-div"</div>
+		</body>
+	</html>
+</script>
+
+
+<script type='text/coderdeck' id='coderdeck-style-example'>
+	<html>
+		<title>test</title>
+		<style>
+			CODE
+		</style>
+		<body>
+			<h1>I'm a H1 heading</h1>
+			<h2>I'm a H2 heading</h2>
+			<h3>Pargraph of text &lt;p&gt; here</p>
+			<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+			<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+		</body>
+	</html>
+</script> 	
+
+<!-- Create any number of elements with class slide within the container -->
+<article class='slide slide-subhead'>
+	<h1>StartUp Institute</h1>
+	<h2>CSS Basics</h2>
+</article>
+	
+</article>
+<article class='slide slide-accent'>
+	<h1>Let's Talk CSS</h1>
+</article>
+
+<article class="slide slide-list">
+	<h1>Cascading Style Sheets</h1>
+	<ul>
+		<li class="slide">
+			<h3>Used for “presentation” of your HTML</h3>
+		</li>
+		<li class="slide">
+			<h3>Controls the styles of your page</h3>
+		</li>
+		<li class="slide">
+			<h3>Also Controls the layout of your page (where stuff is positioned)</h3>
+		</li>
+		<li class="slide">
+			<h3>Can have different styles for different media formats (eg. print, screen, mobile)</h3>
+		</li>
+	</ul>
+</article>
+
+<article class="slide slide-image">
+<h1>What is a style?</h1>
+<img src='images/css.png'/>
+</article>
+
+<article class='slide slide-list'>
+	<h1>We Pick a Selector</h1>
+	<p class="slide">(A selector is the part of our HTML we want to style, for example, h1, h2, p or li)<br/></p>
+		<div class="slide example"><em> h1</em> <span class='slide'> &#123; color:red; &#125;</span></div>
+		<div class="slide example"><em> h2</em> <span class='slide'> &#123; font-size:20px; &#125;</span></div>
+		<div class="slide example"><em> a</em> <span class='slide'> &#123; text-decoration:none; &#125;</span></div>
+	<p class="slide">You can also pick id or class names, as well as multiple tags- but for now let's keep it simple</em>
+	</p>
+</article>
+
+
+<article class='slide slide-list'>
+	<h1>We Make a Declaration</h1>
+	<p class="slide">(using CSS properties and values we add formatting)<br/></p>
+		<div class="slide example">p<span class='slide'> &#123; <em> color:red; </em>&#125;</span></div>
+		<div class="slide example"> h2<span class='slide'> &#123; <em> font-size:20px;</em> &#125;</span></div>
+		<div class="slide example"> a <span class='slide'> &#123; <em> text-decoration:none; </em> &#125;</span></div>
+	<p class="slide">Remember google is your friend here's a quick <a href="http://www.lesliefranke.com/files/reference/csscheatsheet.html">cheat sheet</a>
+	</p>
+</article>
+
+<article class='slide slide-list'>
+<h2>Lets Try this!</h2>
+<p>try making your paragraph red </p>
+<p class="notes">(for in browser exercises you will work between the &lt;style&gt; tags, best practice is to write in a separate document)</p>
+<textarea class='coder-editor coder-editor-split coder-editor-instant' data-coder-template="coderdeck-plain" id='coderdeck-default'>
+<style>
+	
+  /*try adding a style here!*/
+
+</style>
+
+<html>
+  <p>This is some paragraph text.</p>
+</html>
+</textarea>
+
+</article>
+
+<article class='slide slide-accent'>
+	<h1>We have lots of Styles</h1>
+</article>
+
+<article class="slide slide-list">
+<h1>Style Properties</h1>
+<ul>
+<li class="slide">
+	<h3>color:</h3>
+</li>
+<li class="slide">
+	<h3>background-color:</h3>
+</li>
+<li class="slide">
+	<h3>border-radius:</h3>
+</li>
+<li class="slide">
+	<h3>font: style variant weight size family</h3>
+</li>
+<li class="slide">
+	<h3>text-align:</h3>
+</li>
+<li class="slide">
+	<h3>text-indent:</h3>
+</li>
+<li class="slide">
+	<h3>opacity:</h3>
+</li>
+<li class="slide">
+	<h3>line-height</h3>
+</li>
+<li class="slide">
+	<h3>letter-spacing, word-spacing</h3>
+</li>
+<li>
+	<h3 class="slide">Remember google is your friend here's a quick <a href="http://www.lesliefranke.com/files/reference/csscheatsheet.html">cheat sheet</a>
+	</h3></li>
+</ul>
+
+</article>
+
+<article class="slide slide-list">
+<h1>Values</h1>
+<ul>
+<li class="slide">
+	<h3>colors: #FFF, #FFFFFF, rgb(255,255,255), rgba(255,255,255, 1), gray, black, red</h3>
+</li>
+<li class="slide">
+	<h3>numbers: 0, 25px, 1.1em, 100% <span class="notes">(em's are 'M' height - and these inherit/multiply)</span>
+	</h3>
+</li>
+
+</ul>
+</article> 
+
+<article class='slide slide-list'>
+<h2>Properties Playground</h2>
+<p>Try playing with line-height, font-size, letter-spacing, & text-transform</p>
+<textarea class='coder-editor coder-editor-split coder-editor-instant' data-coder-template="coderdeck-plain" id='coderdeck-default'>
+<style>
+p {
+
+
+}	
+</style>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+</textarea>
+</article>
+
+
+
+
+<article class='slide slide-accent'>
+	<h1>Combining Selectors</h1>
+</article>
+
+<article class='slide slide-subhead'>
+	<h1>You can add styles to multiple selectors</h1>
+	<h3>Like all the h1, h2, & h3s</h3>
+</article>
+
+<article class="slide slide-list">
+	 <h2> Us a comma (,) for multiple selectors</h2>
+		<pre><h3><em>.h1, .h2</em> { color:red; }</h3></pre>
+</article>
+
+<article class='slide slide-subhead'>
+	<h1>Or specify certain selectors</h1>
+	<h3>Like only links inside a nav</h3>
+</article>
+
+<article class="slide slide-list">
+	<h2> Can “Cascade” styles with spaces between selectors</h2>
+		<h3>HTML<pre>&lt;nav &gt;&lt;li&gt; ... &lt;/li&gt;&lt;/nav&gt;</pre></h3>
+			 	<h3>	CSS<pre><em>nav li </em> { color:red; } /* only p's inside of outer */</pre>
+				</h3>
+		 	
+</article>
+
+<article class="slide slide-list">
+
+		<h2>Lots of Psudeo-classes too</h2>
+		<pre><em>a:hover</em> { color:blue; } /* only links we are hovering over */<br/>
+<em>a:visited</em> { color:red; } /* links we've visited already */<br/>
+<em>p:first-child</em> { color:red; } /* the first paragraph in a container */<br/>
+		</pre>
+</article>
+
+<article class='slide slide-list'>
+<h2>Selector Combination Exercise</h2>
+<p>Try using some combinations</p>
+<textarea class='coder-editor coder-editor-split coder-editor-instant' data-coder-template="coderdeck-plain" id='coderdeck-default'>
+<style>
+
+</style>
+<header>
+  <h1>My Site!</h1>
+  <nav><ul>
+    <li><a href='#'>Link 1</a></li>
+    <li><a href='#'>Link 2</a></li>
+  </ul></nav>
+</header>
+
+<section id='content'>
+  <article class='blog-post'>
+    <h1>Blog Post 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+  </article>
+  <article class='blog-post'>
+    <h1>Blog Post 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+  </article>
+</section>
+<footer>
+  <a href='#'>Link 1</a> | <a href='#'>Link 2</a>
+</footer>
+
+</textarea>
+</article>
+ 
+
+
+<article class='slide slide-accent'>
+	<h1>How do we use this in our sites?</h1>
+</article>
+
+<article class='slide slide-subhead'>
+	<h1>Your CSS goes in 1 document</h1>
+	<h3>often named style.css<h3>
+</article>	
+
+<article class='slide slide-subhead'>
+	<h1>You link to this document in each HTML page's head</h1>
+</article>
+
+	
+<article class='slide slide-list'>
+		<p><br/><img src="images/style-linking-example.gif" class='top-image'/><br/><br/></p>
+</article>
+
+<article class='slide slide-list'>
+	<h2>This goes in Your HTML</h2>
+	<pre class='prettyprint'>
+&lt;head&gt;
+
+  &lt;link href="stylesheet.css" rel="Stylesheet" type="text/css" /&gt;
+
+&lt;/head&gt;		
+	</pre>		
+</article>
+
+<article class='slide slide-accent'>
+	<h1>Best Practices</h1>
+</article>
+
+<article class='slide slide-subhead'>
+	<h1>Different Browsers<br/> = Different Styles</h1>
+	<h3>Every browser uses a different set of base styles.<br/>
+	 	which can cause your styles to look different in each browser</h3>
+</article>	
+
+<article class='slide slide-subhead'>
+	<h1>Keep it Consitant</h1>
+	<h3>So we use either a reset or modernizer to start make our designs consistant</h3>
+	<h2><a href="http://necolas.github.com/normalize.css/">Normalizer.css</a><br/><a href="http://meyerweb.com/eric/tools/css/reset/">Reset</a></h2>
+</article>
+
+	<article class='slide slide-list'>
+		<h1>Remember</h1>
+		<ul>
+		<li><h3>Styles are Separate from HTML</h3></li>	
+		<li><h3>Usually only need 1 style sheet</h3></li>
+		<li><h3>Link to CSS in your HTML</h3></li>
+		<li><h3>Your CSS should start with a <a href='http://meyerweb.com/eric/tools/css/reset/'>RESET</a></h3></li>
+		</ul>	
+	</article>
+
+
+
+
+
+	<article class='slide slide-accent'>
+		<h1>You are getting good at this!<br/>On to Your Lab!</h1>
+	</article>
+
+
+
+
+
+<!-- Update these paths to point to the correct files. -->
+<script src="src/jquery.tmpl.min.js"></script>
+<script src="src/deck.js/core/deck.core.js"></script>
+
+<!-- Code Mirror -->
+<script src="src/codemirror/lib/codemirror.js"></script>
+<script src="src/codemirror/mode/xml/xml.js"></script>
+<script src="src/codemirror/mode/css/css.js"></script>
+<script src="src/codemirror/mode/javascript/javascript.js"></script>
+<script src="src/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+<!-- Prettify -->
+<script src="src/prettify.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="src/deck.js/extensions/status/deck.status.js"></script>
+<script src="src/deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src='src/deck.coder.js'></script>
+<script src="src/deck.js/extensions/hash/deck.hash.js"></script>
+<script src="src/deck.js/extensions/menu/deck.menu.js"></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
