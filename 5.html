@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Design</title>
+	<meta name="viewport" content="width=1024">
+	
+	<!-- Replace path with correct path to deck.core.css. -->
+	<link rel="stylesheet" href="src/deck.js/core/deck.core.css" type="text/css">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="src/deck.js/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="src/css/prettify.css">
+	<link rel="stylesheet" href="src/css/deck.coder.css">
+	
+
+	<!-- Theme -->
+	<link rel="stylesheet" id='style-theme-link' href="src/css/coderdeck.css" type="text/css" >
+
+	<link rel="stylesheet" href="src/codemirror/lib/codemirror.css">
+	<link rel="stylesheet" href="src/codemirror/theme/default.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Replace path with correct path to Modernizr file. -->
+
+	<script src='src/jquery.min.js'></script>
+	<script src="src/modernizr.js"></script>
+</head>
+<body class="deck-container">
+	<script type='text/coderdeck' id='coderdeck-default'>
+	  <html>
+	    <head>
+	      <script src='src/jquery.min.js'>SCRIPTEND
+	    </head>
+	    <body>
+		    CODE
+	    </body>
+	</html>
+	</script>
+
+	<script type='text/coderdeck' id='coderdeck-plain'>
+		<html>
+			<title>test</title>
+			<link rel="stylesheet" href="reset.css">
+			<body>
+				CODE
+			</body>
+		</html>
+	</script>
+
+	<script type='text/coderdeck' id='coderdeck-css-playground'>
+		<html>
+			<title>test</title>
+				CODE
+			<body>
+				<h1>I'm a H1 heading</h1>
+				<h2>I'm a H2 heading</h2>
+				<p>Pargraph of text &lt;p&gt;</p>
+				<div class='stuff'>&lt;div&gt; with class "stuff"</div>
+				<div id='my-div'>&lt;div&gt; with id "my-div"</div>
+			</body>
+		</html>
+	</script>
+
+
+	<script type='text/coderdeck' id='coderdeck-style-example'>
+		<html>
+			<title>test</title>
+			<style>
+				CODE
+			</style>
+			<body>
+				<h1>I'm a H1 heading</h1>
+				<h2>I'm a H2 heading</h2>
+				<h3>Pargraph of text &lt;p&gt; here</p>
+				<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+				<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+			</body>
+		</html>
+	</script> 	
+
+
+<!-- Create any number of elements with class slide within the container -->
+<article class='slide slide-subhead'>
+<h1>StartUp Institute</h1>
+<h2>Responsive Design</h2>
+</article>
+
+
+<article class='slide slide-subhead'>
+<h1>Responsive Design</h1>
+<h2>What does that mean?</h2>
+</article>
+
+<article class='slide slide-subhead'>
+
+<h1>according to <a href="http://alistapart.com/article/responsive-web-design">Ethan Marcotte</a></h1>
+<h3>A flexible grid (with flexible images) that incorporates media queries to create a responsive, adaptive layout.</h3>
+</article>
+
+<article class='slide slide-list'>
+<h2>Responsive design means:</h2>
+<ul>
+	<li class="slide">
+		<h3>Design for capabilities</h3>
+	</li>
+	<li class="slide">
+		<h3>Not individual browsers</h3>
+	</li>
+	<li class="slide">
+		<h3>Designing for general screen size</h3>
+	</li>
+	<li class="slide">
+		<h3>not exact pixel dimensions</h3>
+	</li>
+	<li class="slide">
+		<h3>Designing for changing content</h3>
+	</li>
+	<li class="slide">
+		<h3>Hey, we should be doing that already!</h3>
+	</li>
+</ul>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>Also, it’s kinda hard.</h1>
+</article>	
+
+<article class='slide slide-list'>
+<h2>Why it’s hard</h2>
+<ul>
+	<li class="slide">
+		<h3>More configurations to test</h3>
+	</li>
+	<li class="slide">
+		<h3>Need to handle different vertical sizes and relations.</h3>
+	</li>
+	<li class="slide">
+		<h3>Images and media need to resize.</h3>
+	</li>
+	<li class="slide">
+		<h3>Titles and Menus need multiple formats.</h3>
+	</li>
+	<li class="slide">
+		<h3>Must have buy-in from clients, designers, and developers</h3>
+	</li>
+	<li class="slide">
+		<h3>Relatively new, libraries and support still works-in-progress</h3>
+	</li>
+</ul>
+</article>
+
+<article class='slide slide-list'>
+<h2>Why it’s awesome</h2>
+<ul>
+	<li class="slide">
+		<h3>Write once, display anywhere</h3>
+	</li>
+	<li class="slide">
+		<h3>Not designing for a static canvas, designing for responsiveness to content and the user.</h3>
+	</li>
+	<li class="slide">
+		<h3>Mobile support baked-in</h3>
+	</li>
+	<li class="slide">
+		<h3>True responsive design will display correctly on the iPad 23 in 2025.</h3>
+	</li>
+	<li class="slide">
+		<h3>Works regardless of device, orientation or resolution.</h3>
+	</li>
+</ul>
+</article>
+
+<article class='slide slide-accent'>
+<h1>So What is Responsive Design?</h1>
+</article>
+
+<article class='slide slide-statement'>
+	<h1>Flexible Grid<br/>
+	Flexible Images<br/>
+	Media Queries</h1>
+</article>	
+
+<article class='slide slide-statement'>
+	<h1>How will we do this?</h1>
+</article>
+
+<article class='slide slide-list'>
+<h2>We will use</h2>
+<ul>
+	<li class="slide">
+		<h3>Percentages and EM's and not pixels</h3>
+	</li>
+	<li class="slide">
+		<h3>Float elements, no absolute positioning</h3>
+	</li>
+	<li class="slide">
+		<h3>Media queries</h3>
+	</li>
+	<li class="slide">
+		<h3>Fluid image widths</h3>
+	</li>
+</ul>
+</article>
+
+
+
+
+<article class='slide slide-accent'>
+	<h1>Flexible Grids</h1>
+</article>	
+
+<article class='slide slide-list'>
+<h2>Flexible/Fluid Grids</h2>
+<h3>Another great <a href="http://alistapart.com/article/fluidgrids">article</a> by Ethan Marcotte</h2><br/>
+<ul>
+	<li class="slide">
+		<h3>Size everything in ems or percentages</h3>
+	</li>
+	<li class="slide">
+		<h3>Fluid percentages for width</h3>
+	</li>
+	<li class="slide">
+		<h3>Height needs to be set to auto</h3>
+	</li>
+	<li class="slide">
+		<h3>Golden Formula: target ÷ context = result</h3>
+	</li>
+</ul>
+</article>
+
+<article class='slide slide-list'>
+<h2>Maintaining Layouts</h2>
+<ul>
+	<li class="slide">
+		<h3>If you have to set a width - try to only do it on the container - use percentages inside</h3>
+	</li>
+	<li class="slide">
+		<h3>a max-width of 100% will make sure your page doesn’t break out of the viewpoint</h3>
+	</li>
+	<li class="slide">
+		<h3>don’t use height in px for anything with text inside</h3>
+	</li>
+</ul>
+</article>
+
+<article class='slide slide-statement'>
+	<h1>How we will do this</h1>
+</article>
+
+<article class='slide slide-list'>
+<h2>Containers </h2>
+<p>Example of a Non-Responsive Grid/Container (notice widths are set in pixels)</p>
+<textarea class='coder-editor coder-editor-full'>
+<style>
+  #wrapper { width:800px; }
+  #content { float:left; width:550px; margin-left:20px; }
+  #sidebar { float:right; width:200px; margin-right:20px; }
+</style>
+<section id='wrapper'>
+  <section id='content'>
+    Content
+  </section>
+  <section id='sidebar'>
+    Sidebar
+
+  </section>
+  <div style='clear:both;'></div>
+</section>
+
+<style>
+  /* Dummy Styles */
+  #wrapper { background-color:purple; padding:20px 0px; }
+  #content { background-color:white; color:black; min-height:300px; }
+  #sidebar { background-color:darkgray; color:white; min-height:300px; }
+</style>
+</textarea>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>Responsive Containers/Grids</h2>
+<p>widths are set in percents (try resizing your browser)</p>
+<textarea class='coder-editor coder-editor-full' >
+<style>
+  #wrapper { width:100%; }
+  #content { float:left; width:63%; margin-left:1%; }
+  #sidebar { float:right; width:33%; margin-right:1%; }
+</style>
+<section id='wrapper'>
+  <section id='content'>
+    Content
+  </section>
+  <section id='sidebar'>
+    Sidebar
+
+  </section>
+  <div style='clear:both;'></div>
+</section>
+
+<style>
+  /* Dummy Styles */
+  #wrapper { background-color:purple; padding:20px 0px; }
+  #content { background-color:white; color:black; min-height:300px; }
+  #sidebar { background-color:darkgray; color:white; min-height:300px; }
+</style>
+</textarea>
+</article>
+
+<article class='slide slide-subhead'>
+	<h1>max-width:</h1>
+	<h3>to set limits on how big a page gets</h3>
+
+</article>
+
+<article class='slide slide-list'>
+<h2>Responsive Containers Max Width</h2>
+<p>this container won't get bigger than 700px</p>
+<textarea class='coder-editor coder-editor-full' >
+<style>
+  #wrapper { width:100%; margin:0 auto; max-width:700px; }
+  #content { float:left; width:63%; margin-left:1%; }
+  #sidebar { float:right; width:33%; margin-right:1%; }
+</style>
+<section id='wrapper'>
+  <section id='content'>
+    Content
+  </section>
+  <section id='sidebar'>
+    Sidebar
+
+  </section>
+  <div style='clear:both;'></div>
+</section>
+
+<style>
+  /* Dummy Styles */
+  #wrapper { background-color:purple; padding:20px 0px; }
+  #content { background-color:white; color:black; min-height:300px; }
+  #sidebar { background-color:darkgray; color:white; min-height:300px; }
+</style>
+</textarea>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>Flexible Images</h1>
+</article>	
+
+<article class='slide slide-statement'>
+	<h1>img { max-width:100%: }</h1>
+</article>	
+
+<article class='slide slide-list'>
+<h2>Make this image flexible</h2>
+<p>add img {max-width:100%;}, what happens when you add width:100%?</p>
+<textarea class='coder-editor coder-editor-full' >
+<style>
+  #wrapper { width:100%; margin:0 auto; max-width:1024px; }
+  #content { width:80%; margin:0 auto; padding:30px 0px; }
+</style>
+<div id='wrapper'>
+  <section id='content'>
+    <img src='http://placekitten.com/600/400'/>
+  </section>
+</div>
+
+<style>
+  /* Dummy Styles */
+  #wrapper { background-color:purple; padding:20px 0px; }
+  #content { background-color:white; color:black; min-height:300px; }
+  #sidebar { background-color:darkgray; color:white; min-height:300px; }
+</style>
+</textarea>
+</article>
+
+
+<article class="slide slide-statement">
+	<h1>Sizing text and setting in em's</h1>
+</article>
+
+<article class='slide slide-list'>
+<h1>Treat Fonts as Proportions Not Pixels</h1>
+<p>16px is the normal 100% default (from our reset)</p>
+<p>the golden formula is target &divide; context = result</p>
+<p>context is our base size (in this case 16px)</p>
+<p>target is what we set (the size of our header might be 24px)</p>
+</article>
+
+<article class="slide slide-accent">
+	<h1>24 &divide; 16 = 1.5</h1>
+</article>
+
+
+<article class='slide slide-list'>
+<h1>Reseting the font size</h1>
+<p>16px is the normal 100% default (from our reset)</p>
+<textarea class='coder-editor coder-editor-full' data-coder-template="coderdeck-plain">
+<h1>I'm a h1</h1>
+<p>I'm a P</p>
+</textarea>
+</article>
+
+<article class='slide slide-list' data-coder-template="coderdeck-plain">
+<h2>adjusting in em's </h2>
+<p>(target &divide; context = result)</p>
+<textarea class='coder-editor coder-editor-full'>
+<style>
+  h1 { font-size:2em;  } /*  32px / 16px = 2  */
+</style>
+
+<h1>i'm a h1</h1>
+<p>i'm a p</p>
+</textarea>
+</article>
+
+
+
+<article class='slide slide-accent'>
+	<h1>Media Queries</h1>
+</article>
+
+<article class='slide slide-list'>
+<h1>Media Types</h1>
+<ul>
+	<li class="slide">
+		<h3>@media <span class="callout">screen</span>{...}</h3>
+	</li>
+	<li class="slide">
+		<h3>@media <span class="callout">print</span>{...}</h3>
+	</li>	
+	<li class="slide">
+			<h3>@media <span class="callout">handheld</span>{...}</h3>
+	</li>
+</ul>
+<h3 class="slide">ex.<br/> @media <span class="callout">screen</span> and (min-width:600px) and (max-width:1200px)</h3>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>Enter Media Queries</h2>
+<ul>
+	<li class="slide">
+		<h3>Can be used inline in stylesheets:</h3>
+<pre class='prettyprint'>
+@media screen and (max-width:500px) { ... }
+</pre>
+	</li>
+	<li class="slide">
+		<h3>Can be used as separate stylesheets:</h3>
+<pre>
+&lt;link rel="stylesheet" media="screen and (max-width:500px)" href="example.css" /&gt;
+</pre>
+	</li>
+	<li class="slide">
+		<h3>Can be used with @import (discouraged)</h3>
+<pre class='prettyprint'>
+@import url(example.css) screen and (max-width:500px);
+</pre>
+	</li>
+</ul>
+</article>
+
+<article class="slide slide-statement">
+	<h1>Watch this <a href="http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-a-crash-course-in-css-media-queries/">Video</a></h1>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>Making Media Queries Work</h2>
+<p>make a rainbow of colors as you resize the browser by changing the background color and setting different max-widths</p>
+<textarea class='coder-editor coder-editor-full' >
+<style>
+  body {background-color:red;}
+
+  @media screen and (max-width:800px) {
+    body {  }
+  }
+
+</style>
+</textarea>
+<script type='coder-solution'>
+<style>
+  body {background-color:red;}
+  
+  @media screen and (max-width:800px) {
+    body { background-color:orange; }
+  }
+  
+  @media screen and (max-width:700px) {
+    body { background-color:yellow; }
+  }
+  
+  @media screen and (max-width:600px) {
+    body { background-color:green; }
+  }
+  
+  @media screen and (max-width:500px) {
+    body { background-color:blue; }
+  }
+  
+  @media screen and (max-width:400px) {
+    body { background-color:purple; }
+  }
+</style
+</script>
+</article>
+
+<article class="slide slide-accent">
+	<h1>Putting it all together</h1>
+</article>
+
+<article class="slide slide-subhead">
+	<h1>widths set to %</h1>
+	<h3>this creates our flexible grid</h3>
+</article>
+
+<article class="slide slide-subhead">
+	<h1>images set to %</h1>
+	<h3>this creates our flexible images</h3>
+</article>
+
+<article class="slide slide-subhead">
+	<h1>type set in ems</h1>
+	<h3>maintains your hierarchy as you resize for screens</h3>
+</article>
+
+<article class="slide slide-subhead">
+	<h1>media queries</h1>
+	<h3>change layout for different screen sizes <br/>(setting breakpoints)</h3>
+</article>
+
+
+
+<article class='slide slide-list' >
+<h2>Responsive Containers Stack</h2>
+<p>using %, ems, and media queries (try resizing the page to see)</p>
+<textarea class='coder-editor coder-editor-full' data-coder-template="coderdeck-plain">
+<style>
+  #wrapper { width:100%; margin:0 auto; max-width:1024px; }
+  #content { float:left; width:63%; margin-left:1%; }
+  #sidebar { float:right; width:33%; margin-right:1%; }
+
+  @media screen and (max-width:600px) {
+    #content { float:none; width:98%; margin:0 1%; }
+    #sidebar { float:none; width:98%; margin:0 1%; }
+  }
+</style>
+<section id='wrapper'>
+  <section id='content'>
+    Content
+  </section>
+  <section id='sidebar'>
+    Sidebar
+
+  </section>
+  <div style='clear:both;'></div>
+</section>
+
+<style>
+  /* Dummy Styles */
+  #wrapper { background-color:purple; padding:20px 0px; }
+  #content { background-color:white; color:black; min-height:300px; }
+  #sidebar { background-color:darkgray; color:white; min-height:300px; }
+</style>
+</textarea>
+</article>
+
+
+<article class='slide slide-list' >
+<h2>What about adjusting our text sizes?</h2>
+<textarea class='coder-editor coder-editor-full' data-coder-template="coderdeck-plain">
+<style>
+  #wrapper { width:100%; margin:0 auto; max-width:1024px; }
+  #content { float:left; width:63%; margin-left:1%; }
+  #sidebar { float:right; width:33%; margin-right:1%; }
+
+  h1 { font-size:4em; }
+  h2 { font-size:3em; }
+  img { max-width:100%; }
+
+  @media screen and (max-width:600px) {
+    body { font-size:0.5em; }
+    p { font-size:1.8em; }
+    #content { float:none; width:98%; margin:0 1%; }
+    #sidebar { float:none; width:98%; margin:0 1%; }
+  }
+</style>
+<section id='wrapper'>
+  <h1>This is the title</h2>
+  <section id='content'>
+    <h2>Content Title</h2>
+    <img src='http://placekitten.com/600/400'/>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in mauris sit amet metus aliquet consequat. Vestibulum rhoncus semper nunc nec rhoncus. Suspendisse in mi et lorem tincidunt pharetra nec ac leo. Curabitur at neque consectetur ligula condimentum porta sed et turpis. Sed condimentum diam id tellus fermentum dapibus lacinia lorem pharetra. Donec id sem ut dui egestas tincidunt ac condimentum ante. Nullam egestas euismod fermentum. Fusce eget magna turpis. Maecenas porttitor lacus eget nibh faucibus venenatis. Suspendisse ultrices ligula vel felis vulputate ut pellentesque nunc ullamcorper.</p>
+  </section>
+  <section id='sidebar'>
+  <h2>Content Title</h2>
+  <p> Suspendisse pellentesque pretium enim, in porttitor dui condimentum ac. Mauris viverra laoreet lacus et tempor. Curabitur sit amet libero arcu, nec rutrum dolor. In hac habitasse platea dictumst. Nam sagittis felis nec quam luctus commodo. Cras pharetra volutpat tortor, sed hendrerit sem accumsan at. Vivamus id justo nec orci consectetur porttitor vel vitae metus. Aliquam erat volutpat. Aliquam erat volutpat. Nam enim nisl, ultrices eget porttitor in, iaculis a sapien. Nullam lacinia blandit neque, vitae faucibus est euismod ac. Quisque fermentum mattis aliquet. Quisque viverra cursus rutrum. Sed bibendum, urna at accumsan interdum, arcu velit semper urna, sed congue elit diam a felis. Suspendisse potenti.</p>
+  </section>
+  <div style='clear:both;'></div>
+</section>
+
+<style>
+  /* Dummy Styles */
+  #wrapper { background-color:purple; padding:20px 0px; }
+  #content { background-color:white; color:black; min-height:300px; }
+  #sidebar { background-color:darkgray; color:white; min-height:300px; }
+</style>
+</textarea>
+</article>
+
+
+<article class='slide slide-list' >
+<h2>Floating Elements</h2>
+<p>just add float:none to your media queries to stop floating</p>
+<textarea class='coder-editor coder-editor-full'data-coder-template="coderdeck-plain" >
+<style>
+  #wrapper { width:100%; margin:0 auto; max-width:1024px; }
+  #content { float:left; width:98%; margin-left:1%; }
+
+  li { float:left; padding:20px } 
+
+  h1 { font-size:4em; }
+  h2 { font-size:3em; }
+  img { max-width:100%; }
+
+  @media screen and (max-width:600px) {
+
+    body { font-size:0.5em; }
+    p { font-size:1.8em; }
+    #content { float:none; width:98%; margin:0 1%; }
+  }
+</style>
+<section id='wrapper'>
+  <h1>This is the title</h2>
+  <section id='content'>
+   <ul>
+   	<li>
+		<img src="http://placekitten.com/200/100?2"/>
+   	</li>
+   	<li>
+		<img src="http://placekitten.com/200/100?3"/>
+   	</li>
+   	<li>
+		<img src="http://placekitten.com/200/100?4"/>
+   	</li>
+   	<li>
+		<img src="http://placekitten.com/200/100?5"/>
+   	</li>
+   	<li>
+		<img src="http://placekitten.com/200/100?6"/>
+   	</li>
+   </ul>
+  <div style='clear:both;'></div>
+  </section>
+  <div style='clear:both;'></div>
+</section>
+
+<style>
+  /* Dummy Styles */
+  #wrapper { background-color:purple; padding:20px 0px; }
+  #content { background-color:white; color:black; min-height:300px; }
+  #sidebar { background-color:darkgray; color:white; min-height:300px; }
+</style>
+</textarea>
+</article>
+
+<article class='slide slide-list'>
+<h2>Other stuff we can do</h2>
+<ul>
+	<li class="slide">
+		<h3>Hiding stuff with display:none</h3>
+	</li>
+	<li class="slide">
+		<h3>Making stuff appear with display:block</h3>
+	</li>
+	<li class="slide">
+		<h3>Creating a separate print stylesheet with "@media print"</h3>
+	</li>
+	<li class="slide">
+          <h3>Adjust based on device orientation</h3>
+	</li>
+	<li class="slide">
+          <h3><a href='https://developer.mozilla.org/en/CSS/Media_queries'>Lots of Media Query options</a></h3>
+	</li>
+</ul>
+</article>
+
+
+<article class='slide slide-list' >
+<h1>"Breakpoints"</h1>
+<h2>You decide when your design breaks. <br/><br/>Add media queries to adjust your page</h2>
+</article>
+
+
+<article class='slide slide-accent'>
+	<h1>You are Awesome!<br/>On to Your Lab!</h1>
+</article>
+
+
+
+
+<!-- Update these paths to point to the correct files. -->
+<script src="src/jquery.tmpl.min.js"></script>
+<script src="src/deck.js/core/deck.core.js"></script>
+
+<!-- Code Mirror -->
+<script src="src/codemirror/lib/codemirror.js"></script>
+<script src="src/codemirror/mode/xml/xml.js"></script>
+<script src="src/codemirror/mode/css/css.js"></script>
+<script src="src/codemirror/mode/javascript/javascript.js"></script>
+<script src="src/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+<!-- Prettify -->
+<script src="src/prettify.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="src/deck.js/extensions/status/deck.status.js"></script>
+<script src="src/deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src='src/deck.coder.js'></script>
+<script src="src/deck.js/extensions/hash/deck.hash.js"></script>
+<script src="src/deck.js/extensions/menu/deck.menu.js"></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
