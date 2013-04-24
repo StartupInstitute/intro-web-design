@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS3</title>
+	<meta name="viewport" content="width=1024">
+	
+	<!-- Replace path with correct path to deck.core.css. -->
+	<link rel="stylesheet" href="src/deck.js/core/deck.core.css" type="text/css">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="src/deck.js/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/hash/deck.hash.css">
+	<link rel="stylesheet" href="src/deck.js/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="src/css/prettify.css">
+	<link rel="stylesheet" href="src/css/deck.coder.css">
+	
+
+	<!-- Theme -->
+	<link rel="stylesheet" id='style-theme-link' href="src/css/coderdeck.css" type="text/css" >
+
+	<link rel="stylesheet" href="src/codemirror/lib/codemirror.css">
+	<link rel="stylesheet" href="src/codemirror/theme/default.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Replace path with correct path to Modernizr file. -->
+
+	<script src='src/jquery.min.js'></script>
+	<script src="src/modernizr.js"></script>
+</head>
+<body class="deck-container">
+	<script type='text/coderdeck' id='coderdeck-default'>
+	  <html>
+	    <head>
+	      <script src='src/jquery.min.js'>SCRIPTEND
+	    </head>
+	    <body>
+		    CODE
+	    </body>
+	</html>
+	</script>
+
+	<script type='text/coderdeck' id='coderdeck-plain'>
+		<html>
+			<title>test</title>
+			<link rel="stylesheet" href="reset.css">
+			<body>
+				CODE
+			</body>
+		</html>
+	</script>
+
+	<script type='text/coderdeck' id='coderdeck-css-playground'>
+		<html>
+			<title>test</title>
+				CODE
+			<body>
+				<h1>I'm a H1 heading</h1>
+				<h2>I'm a H2 heading</h2>
+				<p>Pargraph of text &lt;p&gt;</p>
+				<div class='stuff'>&lt;div&gt; with class "stuff"</div>
+				<div id='my-div'>&lt;div&gt; with id "my-div"</div>
+			</body>
+		</html>
+	</script>
+
+
+	<script type='text/coderdeck' id='coderdeck-style-example'>
+		<html>
+			<title>test</title>
+			<style>
+				CODE
+			</style>
+			<body>
+				<h1>I'm a H1 heading</h1>
+				<h2>I'm a H2 heading</h2>
+				<h3>Pargraph of text &lt;p&gt; here</p>
+				<div class='stuff'>I'm a div &lt;div&gt; with class "stuff"</div>
+				<div id='my-div'>I'm a &lt;div&gt; with id "my-div"</div>
+			</body>
+		</html>
+	</script> 	
+
+
+<!-- Create any number of elements with class slide within the container -->
+<article class='slide slide-subhead'>
+<h1>StartUp Institute</h1>
+<h2>CSS3</h2>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>CSS3</h1>
+</article>
+
+<article class="slide slide-list">
+	<h1>CSS3 Basic Properties</h1>
+	<ol>
+		<li class='slide'>
+      <h3>border-radius</h3>
+		</li>	
+		<li class="slide">
+      <h3>box-shadow</h3>
+		</li>
+		<li class="slide">
+      <h3>text-shadow</h3>
+		</li>
+		<li class="slide">
+    <h3><a href='http://www.html5rocks.com/en/tutorials/flexbox/quick/'>flexbox</a></h3>
+		</li>
+		<li class="slide">
+    <h3>rgba</h3>
+		</li>
+		<li class="slide">
+    <h3><a href='http://www.colorzilla.com/gradient-editor/'>background gradients</a></h3>
+		</li>
+	</ol>	
+</article>	
+
+
+<article class='slide slide-subhead'>
+<h3><img src="images/polaroid.png" /></h3>
+<h2>Let's make a polaroid!</h2>
+</article>
+
+<article class='slide slide-list'>
+<h2>Using</h2>
+<ul>
+	<li><h3>-webkit-transform: rotate(#deg)</h3></li>	
+	<li><h3>border-radius: #</h3></li>
+	<li><h3>box-shadow: left  bottom  spread  color</h3></li>
+	<li><h3>text-shadow: #</h3></li>
+</ul>	
+</article>
+
+<article class='slide slide-list'>
+  <h1>Let's make a polaroid</h1>
+  <p>Let's make a polaroid (<a href='http://www.flickr.com/photos/snowpeak/4152675183/'>Image Source</a>)</p>
+  <textarea class='coder-editor coder-editor-instant'>
+<style>
+  .container { text-align:center; padding-top:30px;}
+  .polaroid {
+    display:inline-block;
+    width: 282px;
+    font-size:1.2em;
+    color:#444;
+    font-family:times;
+    font-weight:bold;
+ 
+</style>
+<div class='container'>
+  <div class='polaroid'>
+   <img src='images/birds.jpg'>
+    Those are some crazy birds!
+  </div>
+</div>
+
+  </textarea>
+<script type='coder-solution'>
+<style>
+  .container { text-align:center; padding-top:30px;}
+  .polaroid {
+    display:inline-block;
+    width: 282px;
+    border:1px solid #eee;
+    border-radius:4px;
+    padding:10px 10px 30px 10px;
+    box-shadow:5px 5px 10px #CCC;
+    -webkit-transform:rotate(15deg);
+    font-size:1.3em;
+    color:#444;
+    background-color:#f3f3f3;
+    font-family: Chalkboard, cursive;
+    font-style:italic;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-shadow:1px 1px #fff;
+  }
+  img { margin-bottom:10px; }
+  
+</style>
+<div class='container'>
+  <div class='polaroid'>
+   <img src='images/birds.jpg'>
+    Those are some <br/>crazy birds!
+  </div>
+</div>
+
+</script>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>CSS3 Animations and Transitions</h1>
+</article>
+
+<article class='slide slide-list'>
+<h2>Vendor Prefixes</h2>
+<ul>
+	<li class="slide">
+  <h3>What are they?</h3>
+	</li>
+	<li class="slide">
+		<h3>They help the web develop at faster rate</h3>
+	</li>
+	<li class="slide">
+		<h3>Let developers use cool stuff, but know: Here be dragons</h3>
+	</li>
+	<li class="slide">
+		<h3>Won't work across all browsers, won't keep working the way they used to.</h3>
+	</li>
+</ul>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>Prefixed transform</h2>
+  		<h3>Here's an example:</h3>
+<pre><code>
+&lt;style>
+.box_rotate {
+ -webkit-transform: rotate(7.5deg);  /* Chrome, Safari 3.1+ */ 
+    -moz-transform: rotate(7.5deg);  /* Firefox 3.5-15 */ 
+     -ms-transform: rotate(7.5deg);  /* IE 9  */
+      -o-transform: rotate(7.5deg);  /* Opera 10.50-12.00  */
+         transform: rotate(7.5deg);  /* FF16+, IE10+, O12.50+  */
+}
+&lt;/style>
+</code></pre>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>CSS Transitions Example</h2>
+<a href='http://css3.bradshawenterprises.com/all/'>More Examples</a>
+<textarea class='coder-editor'>
+<style>
+  #box {
+    transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    -ms-transition: background-clor 2s;
+    -o-transition: background-color 2s;
+    width:50px;
+    height:50px;
+    background-color:green;
+  }
+
+  #box:hover {
+    background-color:red;
+
+  }
+</style>
+<div id='box'></div>
+
+</textarea>
+</article>
+
+
+
+<article class='slide slide-list'>
+<h2>Transitions</h2>
+<ul>
+	<li class="slide">
+		<h3>You can change properties of elements via JavaScript or via Pseudo-classes</h3>
+	</li>
+	<li class="slide">
+		<h3>For example:</h3>
+<pre><code>
+&lt;div class='box'>&lt;/div>
+
+&lt;style>
+ .box { color:red; width:50px; height:50px; }
+ .box:hover { color:blue; }
+&lt;/style>
+</code></pre>
+	</li>
+	<li class="slide">
+		<h3>Transitions let you control how that transition happens</h3>
+	</li>
+</ul>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>Transition Example</h2>
+<textarea class='coder-editor coder-editor-split coder-editor-instant' data-language='html' >
+
+<div class='box'></div>
+<style>
+
+  .box { 
+    background-color:red; 
+    width:50px; height:50px; 
+    /* -webkit-transition: background-color 1s ease-in-out; */
+  }
+  .box:hover { 
+    background-color:blue; 
+  }
+
+</style>
+</textarea>
+</article>
+
+
+<article class='slide slide-list'>
+  <h2>CSS3 Animations</h2>
+  <ul>
+  	<li class="slide">
+  		<h3>Are defined with keyframes</h3>
+  	</li>
+  	<li class="slide">
+  		<h3>Have a name</h3>
+  	</li>
+  	<li class="slide">
+  		<h3>Can have a number of other properties including direction, repeat, duration</h3>
+  	</li>
+  	<li class="slide">
+    <h3><a href='http://www.w3.org/TR/css3-animations/'>See the spec</a></h3>
+  	</li>
+  </ul>
+</article>
+
+<article class='slide slide-list'>
+  <h2>CSS3 Animations Example</h2>
+  <p>You'll need all your prefixes here! (-webkit, -moz, -ms) - only showing webkit (chrome) for brevity on the slides here</p>
+<textarea class='coder-editor'>
+<style>
+
+  @-webkit-keyframes coloranim {
+    0% {
+      background-color:green;
+    }
+    50% {
+      background-color:red;
+    }
+    100% {
+      background-color:blue;
+    }
+  }
+
+  #box:hover { 
+    -webkit-animation-name:none;
+  }
+
+  #box {
+    background-color:black;
+    width:50px;
+    height:50px;
+    -webkit-animation-name: coloranim;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 4;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+</style>
+<div id='box'></div>
+</textarea>
+</article>
+
+
+
+<article class='slide slide-list'>
+<h2>Transform Playground</h2>
+<p>rotate, translate, translate3d, skew, scale, et all.. , <a href='https://developer.mozilla.org/en-US/docs/CSS/transform-origin'>Transform Origin</a></p>
+<textarea class='coder-editor coder-editor-split coder-editor-instant' data-language='html' >
+
+<div class='rectangle'></div>
+<style>
+
+.rectangle{
+  position:absolute;
+  background-color:blue;
+  top: 100px;
+  left: 300px;
+  width: 100px;
+  height: 200px;
+  border:10px solid black;
+}
+</style>
+
+</textarea>
+</article>
+
+
+
+
+
+
+<article class='slide slide-accent'>
+	<h1>You are Awesome!<br/>On to Your Lab!</h1>
+</article>
+
+
+
+
+<!-- Update these paths to point to the correct files. -->
+<script src="src/jquery.tmpl.min.js"></script>
+<script src="src/deck.js/core/deck.core.js"></script>
+
+<!-- Code Mirror -->
+<script src="src/codemirror/lib/codemirror.js"></script>
+<script src="src/codemirror/mode/xml/xml.js"></script>
+<script src="src/codemirror/mode/css/css.js"></script>
+<script src="src/codemirror/mode/javascript/javascript.js"></script>
+<script src="src/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+<!-- Prettify -->
+<script src="src/prettify.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="src/deck.js/extensions/status/deck.status.js"></script>
+<script src="src/deck.js/extensions/navigation/deck.navigation.js"></script>
+<script src='src/deck.coder.js'></script>
+<script src="src/deck.js/extensions/hash/deck.hash.js"></script>
+<script src="src/deck.js/extensions/menu/deck.menu.js"></script>
+
+<script>
+	$(function() {
+		$.deck('.slide');
+	});
+</script>
+</body>
+</html>
